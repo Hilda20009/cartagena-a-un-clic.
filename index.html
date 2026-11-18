@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cartagena a un Clic · Dónde comer en Cartagena de Indias</title>
+<meta name="description" content="Te recomendamos dónde comer en Cartagena según tu zona, tu presupuesto y tu antojo. Escríbenos por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F5F3EE;--paper2:#ECE8DF;--ink:#0B2B33;--mut:#5A6A6E;--line:#D8D4C8;--sea:#0E5B66;--sun:#E2A62A;--coral:#D9553F;--wa:#16803E;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;--sans:"Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;
+  box-sizing:border-box;padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0C171B;--paper2:#111F24;--ink:#EDEAE2;--mut:#9AA9AC;--line:#233338;--sea:#5CC0CA;--wa:#2BA85B}}
+:root[data-theme="dark"]{--paper:#0C171B;--paper2:#111F24;--ink:#EDEAE2;--mut:#9AA9AC;--line:#233338;--sea:#5CC0CA;--wa:#2BA85B}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.05;z-index:1;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--sun);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px;position:relative;z-index:2}
+svg.lucide{width:20px;height:20px;stroke-width:1.7;flex:none}i[data-lucide]{display:inline-block;width:20px;height:20px}
+.btn{display:inline-flex;align-items:center;gap:10px;font:inherit;font-weight:700;font-size:.95rem;padding:14px 26px;border-radius:999px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);text-decoration:none;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn svg.lucide{width:18px;height:18px;transition:transform .25s}
+.btn:hover svg.lucide{transform:translateX(4px)}
+.btn.wa{background:var(--wa);border-color:var(--wa);color:#fff}
+.btn.out{background:transparent;color:inherit;border-color:currentColor}
+.btn.out:hover{background:#fff;color:var(--ink);border-color:#fff}
+.btn.sm{padding:9px 18px;font-size:.86rem}
+/* header */
+.hd{position:fixed;top:0;left:0;right:0;z-index:30;color:#fff;transition:background .3s,color .3s,box-shadow .3s;padding-top:env(safe-area-inset-top,0px)}
+.hd.sc{background:var(--paper);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.hd .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+.logo{font-family:var(--serif);font-size:1.7rem;text-decoration:none;line-height:1}
+.logo em{color:var(--sun)}
+.nav{display:flex;align-items:center;gap:28px;font-size:.94rem}
+.nav a.l{text-decoration:none;opacity:.85;position:relative}
+.nav a.l::after{content:"";position:absolute;left:0;bottom:-4px;height:1.5px;width:0;background:currentColor;transition:width .25s}
+.nav a.l:hover::after{width:100%}
+.hd.sc .nav .btn.wa{color:#fff}
+.burger{display:none;background:transparent;border:1.5px solid currentColor;border-radius:50%;width:44px;height:44px;color:inherit;cursor:pointer}
+/* hero */
+.ph{position:relative;overflow:hidden;background:#0B2B33}
+.ph img,.ph .art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph img{z-index:1}
+.hero{min-height:100svh;color:#fff;display:flex;align-items:flex-end}
+.hero .ph{position:absolute;inset:0}
+.hero .ph img,.hero .ph .art{animation:zoom 22s ease-out both}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(6,30,36,.86),rgba(6,30,36,.5) 55%,rgba(6,30,36,.25)),linear-gradient(0deg,rgba(6,30,36,.7),transparent 45%)}
+.hero .wrap{display:grid;grid-template-columns:1.3fr .8fr;gap:56px;align-items:end;padding-top:130px;padding-bottom:64px}
+.kicker{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;margin:0 0 22px;color:var(--sun);font-weight:500}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(3.2rem,8.4vw,7rem);line-height:.92;letter-spacing:-.02em;margin:0 0 26px}
+h1 em{color:var(--sun)}
+.lede{font-size:1.15rem;max-width:30em;margin:0 0 32px;opacity:.9}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.chat{background:rgba(255,255,255,.1);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.25);border-radius:22px;overflow:hidden}
+.chat h2{margin:0;padding:13px 18px;font:500 .76rem var(--sans);letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.2);display:flex;gap:8px;align-items:center}
+.msgs{padding:16px;display:flex;flex-direction:column;gap:9px;min-height:230px;max-height:300px;overflow:auto}
+.m{max-width:90%;padding:9px 13px;border-radius:14px 14px 14px 3px;background:rgba(255,255,255,.16);font-size:.92rem;line-height:1.5;animation:up .3s ease-out}
+.m.u{align-self:flex-end;background:var(--sun);color:#2a1f00;border-radius:14px 14px 3px 14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0 16px 16px}
+.chip{font:inherit;font-size:.84rem;background:transparent;color:#fff;border:1px solid rgba(255,255,255,.55);padding:7px 13px;border-radius:999px;cursor:pointer;transition:background .2s,color .2s}
+.chip:hover{background:#fff;color:var(--ink)}
+/* stripe */
+.stripe{height:8px;background:linear-gradient(90deg,#E2A62A 20%,#D9553F 20% 40%,#0E7C86 40% 60%,#2F5D9B 60% 80%,#C4326B 80%);position:relative;z-index:2}
+section{padding:110px 0;position:relative;z-index:2}
+.eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--coral);margin:0 0 14px;font-weight:700}
+h2.t{font-family:var(--serif);font-weight:400;font-size:clamp(2.4rem,5.2vw,4rem);line-height:1;letter-spacing:-.015em;margin:0 0 18px}
+h2.t em{color:var(--sea)}
+.sub{color:var(--mut);max-width:34em;margin:0 0 40px}
+/* como */
+.como{display:grid;grid-template-columns:5fr 6fr;gap:84px;align-items:center}
+.arch{border-radius:999px 999px 0 0;aspect-ratio:4/5}
+.steps{list-style:none;padding:0;margin:0}
+.steps li{display:grid;grid-template-columns:54px 1fr;gap:16px;padding:24px 0;border-top:1px solid var(--line)}
+.steps li:last-child{border-bottom:1px solid var(--line)}
+.steps .ic{width:46px;height:46px;border-radius:50%;background:var(--sea);color:var(--paper);display:grid;place-items:center}
+.steps h3{margin:0 0 4px;font-family:var(--serif);font-weight:400;font-size:1.7rem;line-height:1.1}
+.steps p{margin:0;color:var(--mut)}
+/* zonas */
+.zonas{background:var(--paper2)}
+.zg{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;align-items:start}
+.zt{display:block;text-align:left;background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer}
+.zt:nth-child(2){margin-top:56px}
+.zt .ph{aspect-ratio:3/4;border-radius:999px 999px 0 0;transition:transform .5s}
+.zt:hover .ph{transform:translateY(-6px)}
+.zt .ph img{transition:transform .8s}
+.zt:hover .ph img{transform:scale(1.05)}
+.zt h3{font-family:var(--serif);font-weight:400;font-size:2rem;margin:16px 0 0;line-height:1.1}
+.zt span{display:flex;align-items:center;gap:8px;color:var(--mut);font-size:.9rem}
+/* lista */
+.filters{display:flex;flex-wrap:wrap;gap:28px;margin-bottom:12px;padding-bottom:22px;border-bottom:1.5px solid var(--ink);align-items:flex-end}
+.filters label{display:flex;flex-direction:column;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);gap:4px}
+select{font:500 1.05rem var(--sans);color:var(--ink);background:transparent;border:0;border-bottom:1.5px solid var(--line);padding:6px 24px 6px 0;min-width:170px;border-radius:0}
+select option{color:#0B2B33;background:#fff}
+.clr{background:none;border:0;font:inherit;font-weight:700;color:var(--sea);cursor:pointer;text-decoration:underline;text-underline-offset:4px;padding:6px 0}
+.cnt{font-size:.88rem;color:var(--mut);margin:0 0 6px}
+.row{display:grid;grid-template-columns:1.1fr 1.5fr auto;gap:36px;align-items:center;padding:30px 0 30px 22px;border-bottom:1px solid var(--line);position:relative;animation:up .5s ease both;transition:background .25s}
+.row::before{content:"";position:absolute;left:0;top:30px;bottom:30px;width:4px;border-radius:2px;background:var(--z)}
+.row:hover{background:var(--paper2)}
+.row h3{font-family:var(--serif);font-weight:400;font-size:2.1rem;line-height:1.05;margin:0 0 6px}
+.meta{margin:0;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+.row p.d{margin:0 0 6px;opacity:.85}
+.pr{font-weight:700;font-size:.92rem;color:var(--sea)}
+.ra{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.lk{display:inline-flex;gap:6px;align-items:center;font-weight:700;font-size:.88rem;text-decoration:none;padding:9px 6px}
+.lk:hover{text-decoration:underline;text-underline-offset:4px}
+.lk svg.lucide{width:16px;height:16px}
+.empty{padding:40px 0;color:var(--mut)}
+.note{font-size:.84rem;color:var(--mut);margin:22px 0 0}
+/* tarifa y calle */
+.fee{background:var(--sea);color:#fff;padding:72px 0;position:relative;z-index:2;overflow:hidden}
+.fee .wrap{display:grid;grid-template-columns:auto 1fr;gap:56px;align-items:center}
+.fee b{font-family:var(--serif);font-weight:400;font-size:clamp(3.4rem,9vw,7rem);line-height:.9}
+.fee p{margin:0;max-width:30em;font-size:1.1rem;opacity:.92}
+.calle{height:min(62vh,520px);position:relative;z-index:2;color:#fff;display:flex;align-items:flex-end}
+.calle .ph{position:absolute;inset:0}
+.calle::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(6,30,36,.6),transparent 55%)}
+.calle .wrap{padding-bottom:34px;font-family:var(--serif);font-size:clamp(1.6rem,3.4vw,2.6rem);z-index:3}
+/* contacto */
+.cont{background:#0B2B33;color:#F1EEE6}
+.cont .eyebrow{color:var(--sun)}
+.cont .sub{color:#A9BABD}
+.mail{display:inline-block;font-family:var(--serif);font-size:clamp(1.8rem,6vw,4.6rem);line-height:1.05;text-decoration:none;border-bottom:2px solid var(--sun);word-break:break-word;margin:4px 0 36px}
+.mail:hover{color:var(--sun)}
+.nums{display:flex;gap:12px;flex-wrap:wrap}
+footer{background:#08212a;color:#8FA3A7;padding:26px 0 34px;font-size:.86rem;position:relative;z-index:2}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.ov{position:fixed;inset:0;background:rgba(5,20,24,.7);display:flex;align-items:center;justify-content:center;padding:20px;z-index:60}
+.ov[hidden]{display:none}
+.dlg{background:var(--paper);color:var(--ink);border-radius:24px;padding:30px;max-width:390px;width:100%;display:flex;flex-direction:column;gap:12px;animation:up .25s ease-out}
+.dlg h3{font-family:var(--serif);font-weight:400;font-size:2rem;margin:0}
+.dlg p{margin:0 0 6px;color:var(--mut)}
+.dlg .btn.out{color:var(--ink)}.dlg .btn.out:hover{background:var(--ink);color:var(--paper)}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes zoom{from{transform:scale(1.08)}to{transform:scale(1)}}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+@media (max-width:960px){
+  .hero .wrap{grid-template-columns:1fr;gap:36px;padding-top:110px}
+  .como{grid-template-columns:1fr;gap:48px}.arch{max-width:420px}
+  .row{grid-template-columns:1fr;gap:12px}.ra{justify-content:flex-start}
+  .fee .wrap{grid-template-columns:1fr;gap:18px}
+  section{padding:76px 0}
+  .burger{display:grid;place-items:center}
+  .nav{position:fixed;top:0;left:0;right:0;background:var(--paper);color:var(--ink);flex-direction:column;align-items:flex-start;gap:6px;padding:90px 28px 28px;transform:translateY(-100%);transition:transform .35s;z-index:-1;box-shadow:0 20px 40px rgba(0,0,0,.2)}
+  .nav.open{transform:none}.nav a.l{font-family:var(--serif);font-size:1.9rem;opacity:1}
+  .hd.open{color:var(--ink)}
+}
+@media (max-width:640px){.zg{grid-template-columns:1fr;gap:34px}.zt:nth-child(2){margin-top:0}.zt .ph{aspect-ratio:4/3;border-radius:200px 200px 0 0}.wrap{padding:0 20px}.chat .msgs{min-height:190px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="facade" viewBox="0 0 400 500"><rect width="400" height="500" fill="#F1E7D3"/><rect width="82" height="500" fill="#E2A62A"/><rect x="82" width="78" height="500" fill="#D9553F"/><rect x="160" width="84" height="500" fill="#0E7C86"/><rect x="244" width="76" height="500" fill="#2F5D9B"/><rect x="320" width="80" height="500" fill="#C4326B"/><path fill="#0B2B33" opacity=".8" d="M22 500V410a19 19 0 0 1 38 0V500zM102 500V410a19 19 0 0 1 38 0V500zM183 500V410a19 19 0 0 1 38 0V500zM263 500V410a19 19 0 0 1 38 0V500zM341 500V410a19 19 0 0 1 38 0V500zM27 330V298a14 14 0 0 1 28 0V330zM107 330V298a14 14 0 0 1 28 0V330zM188 330V298a14 14 0 0 1 28 0V330zM268 330V298a14 14 0 0 1 28 0V330zM346 330V298a14 14 0 0 1 28 0V330zM27 200V168a14 14 0 0 1 28 0V200zM107 200V168a14 14 0 0 1 28 0V200zM188 200V168a14 14 0 0 1 28 0V200zM268 200V168a14 14 0 0 1 28 0V200zM346 200V168a14 14 0 0 1 28 0V200z"/><path fill="#F1E7D3" d="M15 336h52v5H15zM95 336h52v5H95zM176 336h52v5H176zM256 336h52v5H256zM334 336h52v5H334z"/></symbol>
+</defs></svg>
+
+<header class="hd" id="hd"><div class="wrap">
+  <a class="logo" href="#inicio">Cartagena a un <em>Clic</em></a>
+  <button class="burger" id="bg" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><i data-lucide="menu"></i></button>
+  <nav class="nav" id="nav" aria-label="Principal"><a class="l" href="#como">Cómo funciona</a><a class="l" href="#zonas">Zonas</a><a class="l" href="#restaurantes">Restaurantes</a><a class="l" href="#contacto">Contacto</a><button class="btn wa sm" id="waNav" type="button">WhatsApp</button></nav>
+</div></header>
+
+<main>
+<div class="hero" id="inicio">
+  <figure class="ph" style="margin:0"><svg class="art" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#facade"/></svg><img fetchpriority="high" src="https://images.unsplash.com/photo-1534943441045-1009d7cb0bb9?auto=format&fit=crop&w=2000&q=70" alt="Calle colonial con una torre de iglesia amarilla en Cartagena de Indias" decoding="async" onerror="this.remove()"></figure>
+  <div class="wrap">
+    <div>
+      <p class="kicker">Cartagena de Indias</p>
+      <h1>Dónde comer hoy, <em>sin dar vueltas.</em></h1>
+      <p class="lede">Cuéntanos tu zona, tu presupuesto y qué se te antoja. Te respondemos por WhatsApp con un restaurante que vale la pena y, si quieres, te ayudamos con la reserva.</p>
+      <div class="cta"><button class="btn wa" id="waMain" type="button">Escribir por WhatsApp <i data-lucide="arrow-right"></i></button><a class="btn out" href="#restaurantes">Ver restaurantes</a></div>
+    </div>
+    <div class="chat" aria-label="Ejemplo de conversación">
+      <h2><i data-lucide="message-circle" style="width:16px;height:16px"></i>Prueba una consulta</h2>
+      <div class="msgs" id="msgs" aria-live="polite"><div class="m">Hola. Dime qué se te antoja y te recomiendo dónde ir.</div></div>
+      <div class="chips" id="chips"></div>
+    </div>
+  </div>
+</div>
+<div class="stripe"></div>
+
+<section id="como"><div class="wrap como">
+  <figure class="ph arch rv" style="margin:0"><svg class="art" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="filter:hue-rotate(40deg)"><use href="#facade"/></svg><img src="https://images.unsplash.com/photo-1761314036709-f6f68a3d7cf1?auto=format&fit=crop&w=900&q=70" alt="Ceviche servido con camote, maíz y calamar frito" decoding="async" loading="lazy" onerror="this.remove()"></figure>
+  <div class="rv">
+    <p class="eyebrow">Cómo funciona</p>
+    <h2 class="t">Tres pasos, <em>sin complicaciones.</em></h2>
+    <p class="sub">Sin descargar nada y sin crear cuentas.</p>
+    <ol class="steps">
+      <li><span class="ic"><i data-lucide="message-circle"></i></span><div><h3>Nos escribes</h3><p>Zona, presupuesto y tipo de comida, con tus propias palabras.</p></div></li>
+      <li><span class="ic"><i data-lucide="map-pin"></i></span><div><h3>Te recomendamos</h3><p>Un restaurante que encaja contigo, con su dirección y lo que lo hace especial.</p></div></li>
+      <li><span class="ic"><i data-lucide="calendar-check"></i></span><div><h3>Reservas o vas directo</h3><p>Te ayudamos a apartar mesa o te damos la ruta para llegar.</p></div></li>
+    </ol>
+  </div>
+</div></section>
+
+<section class="zonas" id="zonas"><div class="wrap">
+  <p class="eyebrow">Tres zonas</p>
+  <h2 class="t">Elige por <em>barrio.</em></h2>
+  <p class="sub">Toca una zona para ver sus restaurantes.</p>
+  <div class="zg">
+    <button class="zt rv" type="button" data-z="Centro Histórico"><figure class="ph" style="margin:0"><svg class="art" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#facade"/></svg><img src="https://images.unsplash.com/photo-1767743364534-15bf2ea67781?auto=format&fit=crop&w=800&q=70" alt="Torre histórica amarilla en una plaza soleada" decoding="async" loading="lazy" onerror="this.remove()"></figure><h3>Centro Histórico</h3><span><b data-c="Centro Histórico"></b> restaurantes <i data-lucide="arrow-right" style="width:16px;height:16px"></i></span></button>
+    <button class="zt rv" type="button" data-z="Getsemaní"><figure class="ph" style="margin:0"><svg class="art" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="filter:hue-rotate(-30deg)"><use href="#facade"/></svg><img src="https://images.unsplash.com/photo-1536308037887-165852797016?auto=format&fit=crop&w=800&q=70" alt="Casas de colores en Cartagena" decoding="async" loading="lazy" onerror="this.remove()"></figure><h3>Getsemaní</h3><span><b data-c="Getsemaní"></b> restaurantes <i data-lucide="arrow-right" style="width:16px;height:16px"></i></span></button>
+    <button class="zt rv" type="button" data-z="Bocagrande"><figure class="ph" style="margin:0;background:#0E5B66;display:grid;place-items:center;color:#fff"><i data-lucide="waves" style="width:72px;height:72px"></i></figure><h3>Bocagrande</h3><span><b data-c="Bocagrande"></b> restaurantes <i data-lucide="arrow-right" style="width:16px;height:16px"></i></span></button>
+  </div>
+</div></section>
+
+<section id="restaurantes"><div class="wrap">
+  <p class="eyebrow">Restaurantes</p>
+  <h2 class="t">Restaurantes <em>recomendados.</em></h2>
+  <p class="sub">Filtra por zona, presupuesto y tipo de comida. Cada restaurante tiene su reserva por WhatsApp y su ubicación en el mapa.</p>
+  <div class="filters">
+    <label>Zona<select id="fz"><option value="">Todas</option><option>Centro Histórico</option><option>Getsemaní</option><option>Bocagrande</option></select></label>
+    <label>Presupuesto<select id="fp"><option value="">Todos</option><option value="1">$ Económico</option><option value="2">$$ Medio</option><option value="3">$$$ Especial</option></select></label>
+    <label>Tipo de comida<select id="ft"><option value="">Todos</option><option>Típica</option><option>Mariscos</option><option>De autor</option><option>Peruana</option><option>Paisa</option><option>Gastrobar</option><option>Café</option><option>Asiática</option><option>Bistró</option><option>Rooftop</option></select></label>
+    <button class="clr" id="clr" type="button">Limpiar filtros</button>
+  </div>
+  <p class="cnt" id="cnt" aria-live="polite"></p>
+  <div id="grid"></div>
+  <p class="note">Precios en pesos colombianos, de referencia. Pueden variar según la temporada y el restaurante.</p>
+</div></section>
+
+<div class="fee"><div class="wrap rv"><b>desde $5.000</b><p>Es lo único que pagas con nosotros: una tarifa mínima por tu recomendación y tu reserva. Los precios de cada restaurante los pagas directamente en el lugar.</p></div></div>
+
+<div class="calle"><figure class="ph" style="margin:0"><svg class="art" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#facade"/></svg><img src="https://images.unsplash.com/photo-1714686495394-73e2bb1bbd39?auto=format&fit=crop&w=2000&q=70" alt="Calle angosta con edificios de colores" decoding="async" loading="lazy" onerror="this.remove()"></figure><div class="wrap">Cartagena de Indias, Colombia</div></div>
+
+<section class="cont" id="contacto"><div class="wrap rv">
+  <p class="eyebrow">Contacto</p>
+  <h2 class="t">¿Necesitas más información?</h2>
+  <p class="sub">Si requieres información adicional a la que te dan nuestros agentes, escríbenos a nuestro correo:</p>
+  <a class="mail" href="mailto:cartagenaaunclik@gmail.com">cartagenaaunclik@gmail.com</a>
+  <div class="nums"><a class="btn wa" href="https://wa.me/573105047083" target="_blank" rel="noopener">WhatsApp 310 504 7083 <i data-lucide="arrow-right"></i></a><a class="btn wa" href="https://wa.me/573105431654" target="_blank" rel="noopener">WhatsApp 310 543 1654 <i data-lucide="arrow-right"></i></a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Cartagena a un Clic</span><span>Fotos: Ricardo Gomez Angel, Diego Arenas de Rodrigo, Carlos Sarmiento y Ricky Beron, en Unsplash</span></div></footer>
+
+<div id="pick" class="ov" hidden><div class="dlg" role="dialog" aria-modal="true" aria-labelledby="pt"><h3 id="pt">Elige con quién hablar</h3><p>Escríbenos a cualquiera de nuestros dos números de WhatsApp.</p><a class="btn wa" id="n1" target="_blank" rel="noopener" href="#">WhatsApp 310 504 7083</a><a class="btn wa" id="n2" target="_blank" rel="noopener" href="#">WhatsApp 310 543 1654</a><button class="btn out" id="pc" type="button">Cerrar</button></div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script>
+var $=function(i){return document.getElementById(i)};
+var NUMS=["573105047083","573105431654"],lastFocus=null,GEN="Hola, quiero una recomendación de restaurante en Cartagena.";
+function waTo(n,t){return "https://wa.me/"+n+"?text="+encodeURIComponent(t)}
+function openPick(m){lastFocus=document.activeElement;$("n1").href=waTo(NUMS[0],m);$("n2").href=waTo(NUMS[1],m);$("pick").hidden=false;$("n1").focus()}
+function closePick(){$("pick").hidden=true;if(lastFocus)lastFocus.focus()}
+function closeNav(){$("nav").classList.remove("open");$("hd").classList.remove("open");$("bg").setAttribute("aria-expanded","false")}
+["waNav","waMain"].forEach(function(i){$(i).onclick=function(){openPick(GEN);closeNav()}});
+$("pc").onclick=closePick;
+$("pick").onclick=function(e){if(e.target===this)closePick()};
+document.addEventListener("keydown",function(e){if(e.key==="Escape"){closePick();closeNav()}});
+$("bg").onclick=function(){var o=$("nav").classList.toggle("open");$("hd").classList.toggle("open",o);this.setAttribute("aria-expanded",o)};
+document.querySelectorAll("#nav a.l").forEach(function(a){a.onclick=closeNav});
+function sc(){$("hd").classList.toggle("sc",window.scrollY>60)}
+window.addEventListener("scroll",sc,{passive:true});sc();
+
+var R=[
+ {n:"Mulatos Getsemaní",z:"Getsemaní",t:"Típica",p:1,pr:"Menú ejecutivo desde $35.000",d:"Un clásico de la zona: comida típica en menús ejecutivos para almorzar bien sin gastar de más."},
+ {n:"Candé",z:"Centro Histórico",t:"Típica",p:2,pr:"$21.000 a $53.000 por plato",d:"Cocina 100 % cartagenera en el Centro Histórico, con platos muy bien presentados y una carta vegana y vegetariana."},
+ {n:"La Mulata",z:"Centro Histórico",t:"Típica",p:2,pr:"Platos desde $45.000",d:"Porciones generosas y muy buena relación calidad-precio. Tiene varias sedes, incluida una en Getsemaní."},
+ {n:"Salou",z:"Getsemaní",t:"Mariscos",p:2,pr:"Precio medio (por confirmar)",d:"Ceviches frescos y cazuela generosa, sin las multitudes de los sitios más turísticos."},
+ {n:"Celele",w:"https://celelerestaurante.com/en/home/",z:"Getsemaní",t:"De autor",p:3,pr:"Alta cocina (consultar menú)",d:"Cocina caribeña de autor, entre los 50 mejores restaurantes del mundo. Conviene reservar con unas dos semanas de anticipación."},
+ {n:"Pirka Tributo Peruano",z:"Bocagrande",t:"Peruana",p:3,pr:"Precio alto",d:"Cocina peruana con guiños del Caribe. Su plato bandera es el pollo a la brasa."},
+ {n:"La Cocina de Pepina",z:"Getsemaní",t:"Típica",p:1,pr:"$25.000 a $45.000 por persona",d:"Cocina costeña casera en una calle angosta de Getsemaní. Mejor reservar con unos días de anticipación."},
+ {n:"Buena Vida Marisquería",z:"Getsemaní",t:"Mariscos",p:0,pr:"Consultar precios",d:"Una dirección confiable de mariscos en Getsemaní, recomendada por varias guías."},
+ {n:"Lobo de Mar",z:"Centro Histórico",t:"Mariscos",p:0,pr:"Consultar precios",d:"Mariscos y ceviches en pleno Centro Histórico, a pocos pasos de la ciudad amurallada."},
+ {n:"Mirador Gastro Bar",z:"Centro Histórico",t:"Gastrobar",p:2,pr:"$30.000 a $200.000 por plato",d:"Gastrobar abierto todos los días, desde la mañana hasta las 3:00 a. m. Sirve para un desayuno o una cena tarde."},
+ {n:"Kazabe",z:"Bocagrande",t:"Típica",p:0,pr:"Consultar precios",d:"Platos de cocina local con música en vivo, en Bocagrande."},
+ {n:"Paisa Parrilla",z:"Bocagrande",t:"Paisa",p:0,pr:"Consultar precios",d:"Sazón paisa en Bocagrande, ideal si extrañas una bandeja o una parrilla."},
+ {n:"La Brioche",z:"Bocagrande",t:"Café",p:0,pr:"Consultar precios",d:"Panadería de estilo francés en Bocagrande. Buena para un desayuno tranquilo antes del calor."},
+ {n:"Espíritu Santo",z:"Centro Histórico",t:"Típica",p:1,pr:"$15.000 a $25.000 por plato",d:"Comida colombiana casera y sencilla, muy popular a la hora del almuerzo. Tiene sedes en el Centro Histórico y en Getsemaní."},
+ {n:"Pezetarian",z:"Centro Histórico",t:"Asiática",p:0,pr:"Consultar precios",d:"Sushi, bowls de arroz y ceviche con sabores tropicales, en formato informal y rápido. Queda cerca de la calle Badillo."},
+ {n:"Carmen",z:"Centro Histórico",t:"De autor",p:0,pr:"Consultar precios",d:"Cocina de autor que mezcla técnicas asiáticas y modernas con ingredientes locales."},
+ {n:"Oh La La Bistrot",z:"Getsemaní",t:"Bistró",p:0,pr:"Consultar precios",d:"Bistró de sabores caribeños en una casa colonial restaurada, en la esquina de Calle Larga y Callejón Vargas."},
+ {n:"Trendi Rooftop",z:"Centro Histórico",t:"Rooftop",p:3,pr:"Precio alto",d:"Terraza con vista a la ciudad sobre el hotel Voilá. Ideal para una noche especial."}
+];
+var ZC={"Getsemaní":"#D9553F","Centro Histórico":"#2F5D9B","Bocagrande":"#0E9AA7"};
+document.querySelectorAll("[data-c]").forEach(function(b){b.textContent=R.filter(function(r){return r.z===b.getAttribute("data-c")}).length});
+function mp(r){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(r.n+" restaurante Cartagena de Indias Colombia")}
+var ARW='<i data-lucide="arrow-right"></i>';
+function icons(){if(window.lucide)lucide.createIcons()}
+function render(){
+  var z=$("fz").value,p=$("fp").value,t=$("ft").value,out="",n=0;
+  R.forEach(function(r,i){
+    if((z&&r.z!==z)||(p&&String(r.p)!==p)||(t&&r.t!==t))return;
+    n++;
+    out+='<article class="row" style="--z:'+ZC[r.z]+';animation-delay:'+Math.min(n*40,360)+'ms"><div><h3>'+r.n+'</h3><p class="meta">'+r.z+' · '+r.t+(r.p?' · '+"$".repeat(r.p):'')+'</p></div><div><p class="d">'+r.d+'</p><span class="pr">'+r.pr+'</span></div><div class="ra"><button class="btn wa sm" type="button" data-r="'+i+'">Reservar '+ARW+'</button><a class="lk" href="'+mp(r)+'" target="_blank" rel="noopener"><i data-lucide="map-pin"></i>Mapa</a>'+(r.w?'<a class="lk" href="'+r.w+'" target="_blank" rel="noopener"><i data-lucide="globe"></i>Sitio web</a>':'')+'</div></article>';
+  });
+  $("grid").innerHTML=out||'<p class="empty">No hay restaurantes con esa combinación. Prueba cambiando la zona o el presupuesto.</p>';
+  $("cnt").textContent=n===1?"1 restaurante":n+" restaurantes";
+  icons();
+}
+["fz","fp","ft"].forEach(function(i){$(i).addEventListener("change",render)});
+$("clr").onclick=function(){["fz","fp","ft"].forEach(function(i){$(i).value=""});render()};
+$("grid").addEventListener("click",function(e){var b=e.target.closest("button[data-r]");if(!b)return;var r=R[+b.getAttribute("data-r")];openPick("Hola, quiero reservar en "+r.n+" ("+r.z+").")});
+document.querySelectorAll(".zt").forEach(function(b){b.onclick=function(){$("fz").value=b.getAttribute("data-z");$("fp").value="";$("ft").value="";render();$("restaurantes").scrollIntoView({behavior:"smooth"})}});
+render();
+
+var Q=[
+ ["Algo típico y barato","Mulatos Getsemaní: menú ejecutivo de comida típica desde $35.000. Si prefieres el Centro Histórico, Candé tiene platos desde $21.000."],
+ ["Una cena especial","Celele, en Getsemaní: cocina caribeña de autor entre las 50 mejores del mundo. Reserva con unas dos semanas de anticipación. ¿Te ayudo?"],
+ ["Mariscos en Getsemaní","Salou: ceviches frescos y cazuela generosa a precio medio, con menos multitudes que los sitios más turísticos."]
+];
+var busy=false;
+function add(x,u){var d=document.createElement("div");d.className="m"+(u?" u":"");d.textContent=x;$("msgs").appendChild(d);$("msgs").scrollTop=1e5}
+Q.forEach(function(q){var b=document.createElement("button");b.className="chip";b.type="button";b.textContent=q[0];b.onclick=function(){if(busy)return;busy=true;add(q[0],true);setTimeout(function(){add(q[1],false);busy=false},650)};$("chips").appendChild(b)});
+
+var rv=document.querySelectorAll(".rv");
+if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});rv.forEach(function(el){io.observe(el)})}else{rv.forEach(function(el){el.classList.add("in")})}
+icons();
+</script>
+</body>
+</html>
